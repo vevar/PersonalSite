@@ -5,20 +5,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-public class MainController{
+public class MainController {
 
-//    @GetMapping("/")
-//    public String index(){
-//        return "index";
-//    }
-//
-//    @GetMapping(value = "/hello")
-//    public  String hello(){
-//        return "hello";
-//    }
-    @RequestMapping("/")
-    public ModelAndView reviewPage(ModelAndView model){
+    @RequestMapping({"/", "/index"})
+    public ModelAndView indexPage(ModelAndView model) {
         model.setViewName("index");
+
+        return model;
+    }
+
+    @RequestMapping("/log_in")
+    public ModelAndView loginPage(ModelAndView model) {
+        model.setViewName("log_in");
 
         return model;
     }
