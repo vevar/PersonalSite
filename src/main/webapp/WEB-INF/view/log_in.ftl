@@ -17,7 +17,7 @@
 <body>
 <div class="main">
     <div class="container">
-    <div class="col-md-1 column " style="">
+    <div class="col-md-6 column " style="">
         <div class="logo">
 
         </div>
